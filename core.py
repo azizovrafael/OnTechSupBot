@@ -7,7 +7,7 @@ import os
 from urllib.parse import urlparse
 import pytube, aiogram
 import time
-API_TOKEN = "5070660047:AAEgm1hQVd6AEUHrY6QQo-4l3mFPBFTYl0g"
+API_TOKEN = "{Personal Telgram Bot API Key from Bot Father}"
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO)
@@ -64,7 +64,7 @@ Copyright Claims - https://telegra.ph/Copyright-Claims-01-13""")
         cur.execute(f"INSERT INTO link_user VALUES ({listu[-1]+1},'{message.chat.id}','{message.from_user.full_name}','{message.from_user.username}')")
         con.commit()
     con.close()
-    await message.reply(f"Salam {user.first_name} Video Yukleme Botuna Xos gelmisiniz bla bla bla!", reply_markup=keyboard1)
+    await message.reply(f"Salam {user.first_name} Video Yukleme Botuna Xos gelmisiniz!", reply_markup=keyboard1)
 # Simple Command >>> End <<<
 
 
